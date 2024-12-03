@@ -25,44 +25,43 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 
 ## departement: table structure
 
-- id
-- name
--
+- id | BIGINT -AUTO_INCREMENT - PRIMARY_KEY (UNIQUE, NOTNULL)
+- name | varchar (20) - not null
 - description
 
 ## degree programme: table structure
 
-- id
-- name
-- descrption
+- id | BIGINT -AUTO_INCREMENT - PRIMARY_KEY (UNIQUE, NOTNULL)
+- name | varchar (20) - not null
+- descrption | text
 - id_department
 
 ## course_of_study
 
-- id
-- description
+- id | BIGINT -AUTO_INCREMENT - PRIMARY_KEY (UNIQUE, NOTNULL)
+- description | text - null
 - id_degree_programme
 
 ## teachers
 
-- id
-- name
-- surname
-- email
+- id | BIGINT -AUTO_INCREMENT - PRIMARY_KEY (UNIQUE, NOTNULL)
+- name | varchar (20) - not null
+- surname | varchar (20) - not null
+- email | varchar (20) - not null
 
 ## exam
 
-- id
-- name
+- id | BIGINT -AUTO_INCREMENT - PRIMARY_KEY (UNIQUE, NOTNULL)
+- name | varchar (20) - not null
 - id_course_of_study
 
 ## students
 
-- id
-- name
-- surname
+- id | BIGINT -AUTO_INCREMENT - PRIMARY_KEY (UNIQUE, NOTNULL)
+- name | varchar (20) - not null
+- surname | varchar (20) - not null
 - id_degree_programme
 
-- email
-
-- enrollment year
+- email | varchar (20) - not null
+- enrollment year | date - not null
+- matricola | varchar(20) NOT NULL UNIQUE
