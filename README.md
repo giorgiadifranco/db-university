@@ -23,4 +23,51 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 - exam sessions
 - students
 
-##
+## departement: table structure
+
+- id
+- name
+- id_degree programme
+- description
+
+## degree programme: table structure
+
+- id
+- name
+- descrption
+- id_course of study
+- id_students
+
+## course_of_study
+
+- id
+- description
+- id_exam
+- id_teacher
+
+## teachers
+
+- id
+- name
+- surname
+- id_course_of_study
+- exam ?
+- email
+
+## exam
+
+- id
+- name
+- id_course_of_study
+- id_students
+
+## students
+
+- id
+- name
+- surname
+- id_degree_programme
+- id_course
+- email
+- id_exam
+- enrollment year
