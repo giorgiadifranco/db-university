@@ -12,3 +12,15 @@ Modellare la struttura di un database per memorizzare tutti i dati riguardanti u
 8. per ogni appello d'Esame a cui lo Studente ha partecipato, è necessario memorizzare il voto ottenuto, anche se non sufficiente.
 
 Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi di stabilirne le relazioni. Infine, andiamo a definire le colonne e i tipi di dato di ogni tabella.
+
+## tables name:
+
+- departments
+- degree programme
+- courses of study
+- teachers
+- exams
+- exam sessions
+- students
+
+##
