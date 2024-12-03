@@ -27,7 +27,7 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 
 - id
 - name
-- id_degree programme
+-
 - description
 
 ## degree programme: table structure
@@ -35,23 +35,19 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 - id
 - name
 - descrption
-- id_course of study
-- id_students
+- id_department
 
 ## course_of_study
 
 - id
 - description
-- id_exam
-- id_teacher
+- id_degree_programme
 
 ## teachers
 
 - id
 - name
 - surname
-- id_course_of_study
-- exam ?
 - email
 
 ## exam
@@ -59,7 +55,6 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 - id
 - name
 - id_course_of_study
-- id_students
 
 ## students
 
@@ -67,7 +62,7 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 - name
 - surname
 - id_degree_programme
-- id_course
+
 - email
-- id_exam
+
 - enrollment year
