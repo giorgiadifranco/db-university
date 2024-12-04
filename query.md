@@ -8,4 +8,10 @@ where YEAR (date_of_birth) = 1990;
 
 SELECT \*
 FROM courses
-where cfu= 10;
+where cfu > 10;
+
+## 3
+
+SELECT \*
+FROM students
+WHERE TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE())

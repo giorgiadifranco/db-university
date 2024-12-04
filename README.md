@@ -27,7 +27,10 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 
 - id | BIGINT -AUTO_INCREMENT - PRIMARY_KEY (UNIQUE, NOTNULL)
 - name | varchar (20) - not null
+- head_of_department
+- website
 - description
+- email_address
 
 ## degree programme: table structure
 
