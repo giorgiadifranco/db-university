@@ -14,4 +14,4 @@ where cfu > 10;
 
 SELECT \*
 FROM students
-WHERE TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE())
+WHERE TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) > 30
