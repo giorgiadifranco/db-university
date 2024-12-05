@@ -22,14 +22,17 @@ FROM degrees
 group by department_id
 
 
--- 5 Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
+```JOINS
+```
+
+-- 1 Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
 SELECT students.id, students.name, degrees.id, degrees.name
 FROM students
 JOIN degrees
 ON students.degree_id = degrees.id
 WHERE degrees.name = 'Corso di Laurea in Economia';
 
--- 6 Selezionare tutti i Corsi di Laurea Magistrale del Dipartimento di Neuroscienze
+-- 2 Selezionare tutti i Corsi di Laurea Magistrale del Dipartimento di Neuroscienze
 SELECT degrees.id AS degree_id, degrees.name AS degree_name, departments.name AS department_name
 FROM degrees
 JOIN departments
@@ -37,13 +40,20 @@ ON degrees.department_id = departments.id
 WHERE degrees.level = 'Magistrale'
 AND departments.name = 'Dipartimento di Neuroscienze';
 
--- 7 Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
+-- 3 Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
 SELECT teachers.name, teachers.surname, teachers.id, courses.id, courses.name
 FROM teachers
 JOIN course_teacher ON teachers.id = course_teacher.teacher_id
 JOIN courses ON course_teacher.course_id = courses.id
 
 WHERE teachers.id = 44
+
+-- 4 Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e nome
+SELECT students.name, students.surname, students.id AS student_id, degrees.name, degrees.id AS degree_id, department_id, departments.name
+FROM students
+JOIN degrees on students.degree_id = degrees.id
+JOIN departments on degrees.department_id = departments.id
+ORDER BY students.surname and students.name
 
 ```sql
 ````
