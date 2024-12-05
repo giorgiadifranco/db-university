@@ -43,7 +43,7 @@ WHERE level = 'magistrale'
 
 ## 7
 ```sql
-SELECT *
+SELECT COUNT('id') AS'total_departments'
 FROM departments
 ```sql
 ````
