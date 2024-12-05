@@ -1,29 +1,49 @@
 ## 1
 
-SELECT \*
+````sql
+SELECT *
 FROM students
 where YEAR (date_of_birth) = 1990;
+```sql
 
 ## 2
-
-SELECT \*
+```sql
+SELECT *
 FROM courses
 where cfu > 10;
+```sql
 
 ## 3
-
-SELECT \*
+```sql
+SELECT *
 FROM students
 WHERE TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) > 30
+```sql
 
 ## 4
-
-SELECT \*
+```sql
+SELECT *
 FROM courses
 WHERE period= 'II semestre' AND year= 1;
+```sql
 
 ## 5
-
-SELECT \*
+```sql
+SELECT *
 FROM exams
 where hour > '14:00:00' AND date ='2020-06-26'
+```sql
+## 6
+
+```sql
+SELECT *
+FROM degrees
+WHERE level = 'magistrale'
+```sql
+
+## 7
+```sql
+SELECT *
+FROM departments
+```sql
+````
