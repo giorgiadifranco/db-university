@@ -24,7 +24,7 @@ WHERE TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) > 30
 ```sql
 SELECT *
 FROM courses
-WHERE period= 'II semestre' AND year= 1;
+WHERE period= 'I semestre' AND year= 1;
 ```sql
 
 ## 5
@@ -47,3 +47,9 @@ SELECT *
 FROM departments
 ```sql
 ````
+
+## 8
+
+```sql
+
+```
