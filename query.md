@@ -50,8 +50,28 @@ FROM departments
 
 ## 8
 
-```sql
+````sql
 SELECT COUNT('id') as teachers_no_phone
 from teachers
 where phone is null
-```
+```sql
+````
+
+````sql
+## 9
+insert into students('degree_id','name', 'surame','date_of_birt','fiscal_code','enrolment_date','registration_number', 'email')
+VALUE (61, 'nicola', 'ambrosini','1990-08-4','kjhfkjskjbgkjgkgjkjh', '20-03-2022', '68798573985','nico.ambro@hjkhfj.it')
+
+SELECT *
+FROM students
+WHERE 'registration_number'= 123456
+```sql
+
+## 10
+```sql
+SELECT *
+FROM teachers
+where surname = 'rizzo'
+```sql
+
+````
