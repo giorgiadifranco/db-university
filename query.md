@@ -26,4 +26,4 @@ WHERE period= 'II semestre' AND year= 1;
 
 SELECT \*
 FROM exams
-where hour > '14:00:00'
+where hour > '14:00:00' AND date ='2020-06-26'
