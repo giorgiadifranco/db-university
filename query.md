@@ -51,5 +51,7 @@ FROM departments
 ## 8
 
 ```sql
-
+SELECT COUNT('id') as teachers_no_phone
+from teachers
+where phone is null
 ```
