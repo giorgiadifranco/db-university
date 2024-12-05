@@ -21,3 +21,9 @@ WHERE TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) > 30
 SELECT \*
 FROM courses
 WHERE period= 'II semestre' AND year= 1;
+
+## 5
+
+SELECT \*
+FROM exams
+where hour > '14:00:00'
